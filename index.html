@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WHITLEY WILLS</title>
+    <link rel="stylesheet" href="GrowthStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Growthmediaquery.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="Grow-Main-container">
+      <!-- Navbar///////////////////////////////// -->
+
+      <div class="growth-company-logo">
+        <img
+          class="growth-company-logo-image"
+          src="data:image/png;base64,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"
+          alt=""
+        />
+      </div>
+
+      <div class="navbar" id="myNavbar">
+        <a href="#homepage">HOME</a>
+        <a href="#output">OUR PRACTICE</a>
+        <a href="#services">SERVICE</a>
+        <a href="#reviewss">REVIEWS</a>
+        <a href="#contact">CONTACT</a>
+        <a class="Grow-request" href="#appointment">REQUEST AN APPOINMENT</a>
+        <a href="#number">
+          <img
+            class="grow-mobileicon"
+            src="Icons/phone-call (1).png"
+            alt=""
+          />(901)726-9525</a
+        >
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <!-- firstpage////////////////////////////////////////////// -->
+
+      <div    id="homepage" class="grow-mainpage-cartoonimage">
+
+        <!-- texts/////////////////////////////////////////////////////////////////////////// -->
+        <span data-aos="fade-left"   class="grow-create-text">CREATING</span>
+        <span data-aos="fade-right"   class="grow-create-text">UNFORGETTABLE SMILES</span>
+
+
+        <span class="grow-create-memphis">Memphis, TN</span>
+
+        <button class="grow-create-BUTTON" >REQUEST AN APPOINTMENT</button>
+
+        <!-- iconsss//////////////////////////////////////////////////////////////////////////////// -->
+
+        <div  id="services" class="grow-create-socials">
+            <img class="grow-social-icons" src="Icons/google.png" alt="">
+            <img class="grow-social-icons"  src="Icons/facebook-app-symbol (1).png" alt="">
+            <img class="grow-social-icons"  src="Icons/twitter (2).png" alt="">
+      
+            <img class="grow-social-icons"  src="Icons/video.png" alt="">
+
+        </div>
+
+      </div>
+
+      <!-- section2d//////////////////////////////////////////////////////////////////////////////////// -->
+
+      <div class="grow-persons" id="output">
+       
+
+      </div>
+
+
+
+
+            <!-- section3rd////////////////paragraph//////////////////////////////////////////////////////////////////// -->
+
+        <div data-aos="fade-up"    class="grow-doctor-paragraph">
+          <div class="grow-head-tag">
+            <span >Your Dentist in Memphis, TN, and Surrounding Areas of Mississippi and Arkansas</span>
+
+          </div>
+
+          <div class="grow-drpara-main">
+            <div class="grow-dr-image">
+              <img class="grow-dr-image-pyramid" src="https://cdn.thecrazytourist.com/wp-content/uploads/2023/02/ccimage-shutterstock_2253071249.jpg" alt="">
+
+            </div>
+
+            <div class="grow-dr-nameandpara">
+              <div class="grow-drop-paraheads">
+                <span class="grow-drop-head24">WELCOME TO OUR PRACTICE</span>
+                <span class="grow-drop-head16">DR.J. WHITELY WILLS</span>
+              </div>
+              <div class="grow-dr-paragraphpara">
+                <span>Welcome to the office of Dr. J . Whitley Wills! Our dentist has been providing exceptional general, cosmetic,implant, restorative and preventative dentistry in Memphis, Tennessee, and the surrounding areas since 1993, and he knows just how to take care of youo. With his knowledge and experience, Dr. J .Whitley Wills will work with you to help you achieve all of your dental goals. Dr. J. Whitley Wills also utilizes some of the latest technology available to improve the health of your smile. Wheather you are missing teeth and require dental implants or you are visiting for a routine exam, you know that you are in good hands at our office.</span>
+              </div>
+
+              <button class="grow-button-learnmore">Learn More</button>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- section4drparagraph/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- section4drparagraph/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- section4drparagraph/////////////////////////////////////////////////////////////////////////////// -->
+          <div data-aos="fade-right"  id="contact" class="grow-dr-secondpara">
+            <div class="grow-second-parahead">
+              <span>MEET THE DOCTOR</span>
+
+            </div>
+
+
+            <div class="grow-secondparagraph-maindiv">
+              <div class="grow-secndparagraph">
+                <p class="grow-secondpara-heading">DR. WHITELY WILLS. DDS</p>
+                <span class="grow-secondpara-paragraph">After studying biology at Ole Miss College of Dentistry in 1989.study club and a past dental director of the St. Ignatius Haiti Medical Missions. He believes in helping people ge studying biology at Ole Miss, Dr. J. Whitley wills graduated from the university of Tennessee College of Dentistry in 1989. Since graduatithrn Florida, taking courses on cosmetic, implant and restorative dentistry to ensure that his patients receive the most up to date dental care possible. Dr. Wills was the 2011 president of the Memphis dental study club and a past dental director of the St. Ignatius Haiti Medical Missions. He believes in helping people get the smile they've always wanted, and he enjoys getting to know his patients. t the smile they've always wanted, and he enjoys getting to know his patients. getting to know his patients.</span>
+
+              </div>
+              <div class="grow-seconddrphoto">
+                <img class="grow-dr-ddsphoto" src="https://www.pankey.org/wp-content/uploads/Dr.-Wills2.jpg" alt="">
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+           <!-- section5logos/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- section5logos/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- section5logos/////////////////////////////////////////////////////////////////////////////// -->
+
+        <div data-aos="fade-left"  class="grow-section5-logos">
+          <img class="grow-section5-eachlogo0" src="https://www.westernspringsorthodontist.com/wp-content/uploads/2018/01/ada-gray.png" alt="">
+          <img class="grow-section5-eachlogo1" src="https://adamsdentaltn.com/wp-content/themes/Adams/images/tda-tennessee-dental-association-w300-o.png" alt="">
+          <img class="grow-section5-eachlogo2" src="http://midsouthmissionofmercy.sitewrench.com/assets/2321/memphis_dental_society.png" alt="">
+          <img class="grow-section5-eachlogo3" src="https://images-platform.99static.com/37g8gLl9O9vIi5-U5KCEj8hXLLc=/268x257:957x946/500x500/top/smart/99designs-contests-attachments/84/84885/attachment_84885190" alt="">
+          <img class="grow-section5-eachlogo4" src="https://plansource.com/wp-content/uploads/2021/01/Cigna-Logo.png" alt="">
+          <img class="grow-section5-eachlogo5" src="https://images.squarespace-cdn.com/content/v1/5f074dc0391aef0c22ae76e4/1594322905751-42WQ3Z9NMYY84HES63VC/dd.png?format=300w" alt="">
+
+        </div>
+
+
+        
+           <!-- section6logosdental/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- section6logosdental/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- section6logosdental/////////////////////////////////////////////////////////////////////////////// -->
+          <div data-aos="fade-right"  class="grow-dental-circeles">
+            <p class="grow-dental-tag">SERVICES</p>
+            <div class="grow-dental-mapdiv">
+
+              <div class="grow-dentalimagetextdiv">
+
+              
+
+              <div class="grow-dental-radius-circles">
+                <img class="grow-dental-images" src="Icons/dental-implant.png" alt="">
+
+              </div>
+              <span>
+                IMPLANT DENSTISTRY
+              </span>
+            </div>
+
+            <div class="grow-dentalimagetextdiv">
+            <div class="grow-dental-radius-circles">
+              <img class="grow-dental-images" src="Icons/clean.png" alt="">
+
+            </div>
+            <span>
+              GLOW TEETH WHITENING
+            </span>
+          </div>
+
+          <div class="grow-dentalimagetextdiv">
+          <div class="grow-dental-radius-circles">
+            <img class="grow-dental-images" src="Icons/teeth.png" alt="">
+
+          </div>
+          <span>
+          REVEAL* CLEAR ALIGNERS
+          </span>
+        </div>
+
+        <div class="grow-dentalimagetextdiv">
+        <div class="grow-dental-radius-circles">
+          <img class="grow-dental-images" src="Icons/scaling.png" alt="">
+
+        </div>
+        <span>
+          PORCELAIN DENTAL VENEERS
+        </span>
+      </div>
+
+      <div class="grow-dentalimagetextdiv">
+      <div class="grow-dental-radius-circles">
+        <img class="grow-dental-images" src="Icons/tooth-whitening.png" alt="">
+
+      </div>
+      <span>
+        DENTAL CROWN AND BRIDGE
+      </span>
+    </div>
+
+
+            </div>
+
+
+
+          </div>
+
+
+            <!-- section7review/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- section7review/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- section7review/////////////////////////////////////////////////////////////////////////////// -->
+            <div data-aos="fade-left"  id="reviewss"  class="grow-dental-review">
+
+              <p class="grow-our-reviews">OUR REVIEWS</p>
+
+              <div class="grow-whitleyreview">
+                <div class="grow-review-drimage">
+                  <img class="grow-dental-reivew-images" src="https://www.pankey.org/wp-content/uploads/Dr.-Wills2.jpg" alt="">
+
+                </div>
+
+                <div class="grow-review-nameanddetails">
+                  <span>J. WHITLEY WILLS, DDS</span>
+                  <div class="grow-combo-div"> 
+                    <span>5.0</span>
+                    <img class="grow-rating" src="Icons/rating (2).png" alt="">
+                  </div>
+                  <span class="growth-base">Based on 6 Reviews</span>
+
+                </div>
+
+              </div>
+
+
+              <div class="grow-reviews-fullrowdiv">
+<!-- 1 -->
+
+                <div class="grow-dental-reviews-1">
+                  <div class="grow-dental-review-rows1">
+                    <div class="grow-coma-div">
+                      <img class="grow-coma" src="Icons/quotation-mark.png" alt="">
+                      <img class="grow-rating" src="Icons/rating (2).png" alt="">
+                    </div>
+                    <div class="grow-star-andpara">
+                    
+                    <span>I Joined them after the pandemic. Very responsive, helpful, and their dental hygienists are gentle when performing routine work. I Would recommend this office to anyone needing dental work.</span>
+
+                  </div>
+                  </div>
+                  <div class="grow-dental-review-rows2">
+                    <div class="grow-dental-review-imageandname">
+                      <div class="grow-dental-nameimagetag">
+                        <div class="grow-name-circle">
+                          <span>V</span>
+
+                        </div>
+
+                      </div>
+                      <div class="grow-dental-nameandrating">
+                        <p class="Grow-rewname">V. C.</p>
+                      <span class="grow-revi-date">1 Month Ago</span>
+
+                      </div>
+
+                    </div>
+
+
+                </div>
+
+              </div>
+
+
+              <!-- 2 -->
+
+
+
+
+
+
+              <div class="grow-dental-reviews-1">
+                <div class="grow-dental-review-rows1">
+                  <div class="grow-coma-div">
+                    <img class="grow-coma" src="Icons/quotation-mark.png" alt="">
+                    <img class="grow-rating" src="Icons/rating (2).png" alt="">
+                  </div>
+                  <div class="grow-star-andpara">
+                  
+                  <span>Dr Will has been seeing me since I was little! He will always be one of my favourite dentist to go to! He takes really good care of me when I have any issues! His team is amazing and gets you in right away!</span>
+
+                </div>
+                </div>
+                <div class="grow-dental-review-rows2">
+                  <div class="grow-dental-review-imageandname">
+                    <div class="grow-dental-nameimagetag">
+                      <div class="grow-name-circle">
+                        <span>R</span>
+
+                      </div>
+
+                    </div>
+                    <div class="grow-dental-nameandrating">
+                      <p class="Grow-rewname">Rebecca B.</p>
+                    <span class="grow-revi-date">2 Month Ago</span>
+
+                    </div>
+
+                  </div>
+
+
+              </div>
+
+            </div>
+
+            <!-- 3 -->
+
+
+            <div class="grow-dental-reviews-1">
+              <div class="grow-dental-review-rows1">
+                <div class="grow-coma-div">
+                  <img class="grow-coma" src="Icons/quotation-mark.png" alt="">
+                  <img class="grow-rating" src="Icons/rating (2).png" alt="">
+                </div>
+                <div class="grow-star-andpara">
+                
+                <span>Dr.Wills and all of the staff from the front desk to the back are amazing every time I go in . I know they will do all that they can to make me feel comfortable and happy while i'm receiving any treatment.</span>
+
+              </div>
+              </div>
+              <div class="grow-dental-review-rows2">
+                <div class="grow-dental-review-imageandname">
+                  <div class="grow-dental-nameimagetag">
+                    <div class="grow-name-circle">
+                      <span>A</span>
+
+                    </div>
+
+                  </div>
+                  <div class="grow-dental-nameandrating">
+                    <p class="Grow-rewname">Alison H.</p>
+                  <span class="grow-revi-date">2 Month Ago</span>
+
+                  </div>
+
+                </div>
+
+
+            </div>
+
+          </div>
+
+            </div>
+
+            <button class="grow-button-allreviews">VIEW ALL REVIEWS</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    
+            <!-- sectoin8insureance/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- sectoin8insureance/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- sectoin8insureance/////////////////////////////////////////////////////////////////////////////// -->
+        <div data-aos="fade-right"  id="appointment" class="grow-dental-insure">
+          <div class="grow-leftinsure">
+            <p class="grow-insure-tag">INSURANCE INFORMATION</p>
+            <p class="grow-network-tag">In network with dental premiere provider and Cigna DPPO Provider</p>
+            <p class="grow-apply-tag">APPLY FOR FINANCING</p>
+            <img class="grow-care-image" src="https://www.plasticsurgery.org/images/Logos/care-credit-asps.png" alt="">
+
+          </div>
+          <img class="grow-dental-insureimage" src="https://www.affluxdentistry.ca/wp-content/uploads/2019/09/dental-insurance.jpg" alt="">
+
+        </div>
+
+
+
+          <!-- section9gallery/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- section9gallery/////////////////////////////////////////////////////////////////////////////// -->
+        <!-- section9gallery/////////////////////////////////////////////////////////////////////////////// -->
+
+          <div class="grow-gallery-div">
+            <p class="grow-insure-tag">GALLERY</p>
+
+            <div class="carouselmedia">
+             <img class="grow-carousal-imagestag" src="https://previews.123rf.com/images/lightfieldstudios/lightfieldstudios1811/lightfieldstudios181127567/112345669-beautiful-little-child-sitting-in-dental-chair-at-dentist-office-and-showing-thumb-up.jpg" alt="">
+             <img class="grow-carousal-imagestag"  src="https://eadn-wc01-7925410.nxedge.io/wp-content/uploads/2023/08/Changes-to-COVID-19-IPAC-Guidance-from-CDHO-and-RCDSO.webp" alt="">
+            <img class="grow-carousal-imagestag" src="https://rwc-industries.com/wp-content/uploads/2021/10/Dental-PPE-1-700x623.jpg.webp" alt="">
+              
+            </div>
+
+
+
+            <div id="carousel-container">
+              <div id="carousel">
+                <div class="carousel-item"><img class="grow-carousal-imagestag" src="https://previews.123rf.com/images/lightfieldstudios/lightfieldstudios1811/lightfieldstudios181127567/112345669-beautiful-little-child-sitting-in-dental-chair-at-dentist-office-and-showing-thumb-up.jpg" alt=""></div>
+               <div class="carousel-item"><img class="grow-carousal-imagestag"  src="https://eadn-wc01-7925410.nxedge.io/wp-content/uploads/2023/08/Changes-to-COVID-19-IPAC-Guidance-from-CDHO-and-RCDSO.webp" alt=""></div>
+                <div class="carousel-item"><img class="grow-carousal-imagestag" src="https://rwc-industries.com/wp-content/uploads/2021/10/Dental-PPE-1-700x623.jpg.webp" alt=""></div>
+                <div class="carousel-item"><img class="grow-carousal-imagestag" src="https://previews.123rf.com/images/lightfieldstudios/lightfieldstudios1811/lightfieldstudios181127567/112345669-beautiful-little-child-sitting-in-dental-chair-at-dentist-office-and-showing-thumb-up.jpg" alt=""></div>
+               <div class="carousel-item"><img class="grow-carousal-imagestag"  src="https://eadn-wc01-7925410.nxedge.io/wp-content/uploads/2023/08/Changes-to-COVID-19-IPAC-Guidance-from-CDHO-and-RCDSO.webp" alt=""></div>
+                <div class="carousel-item"><img class="grow-carousal-imagestag" src="https://rwc-industries.com/wp-content/uploads/2021/10/Dental-PPE-1-700x623.jpg.webp" alt=""></div>
+                <div class="carousel-item"><img class="grow-carousal-imagestag" src="https://previews.123rf.com/images/lightfieldstudios/lightfieldstudios1811/lightfieldstudios181127567/112345669-beautiful-little-child-sitting-in-dental-chair-at-dentist-office-and-showing-thumb-up.jpg" alt=""></div>
+               <div class="carousel-item"><img class="grow-carousal-imagestag"  src="https://eadn-wc01-7925410.nxedge.io/wp-content/uploads/2023/08/Changes-to-COVID-19-IPAC-Guidance-from-CDHO-and-RCDSO.webp" alt=""></div>
+                <div class="carousel-item"><img class="grow-carousal-imagestag" src="https://rwc-industries.com/wp-content/uploads/2021/10/Dental-PPE-1-700x623.jpg.webp" alt=""></div>
+                <div class="carousel-item"><img class="grow-carousal-imagestag" src="https://previews.123rf.com/images/lightfieldstudios/lightfieldstudios1811/lightfieldstudios181127567/112345669-beautiful-little-child-sitting-in-dental-chair-at-dentist-office-and-showing-thumb-up.jpg" alt=""></div>
+               <div class="carousel-item"><img class="grow-carousal-imagestag"  src="https://eadn-wc01-7925410.nxedge.io/wp-content/uploads/2023/08/Changes-to-COVID-19-IPAC-Guidance-from-CDHO-and-RCDSO.webp" alt=""></div>
+                <div class="carousel-item"><img class="grow-carousal-imagestag" src="https://rwc-industries.com/wp-content/uploads/2021/10/Dental-PPE-1-700x623.jpg.webp" alt=""></div>
+                <div class="carousel-item"><img class="grow-carousal-imagestag" src="https://previews.123rf.com/images/lightfieldstudios/lightfieldstudios1811/lightfieldstudios181127567/112345669-beautiful-little-child-sitting-in-dental-chair-at-dentist-office-and-showing-thumb-up.jpg" alt=""></div>
+                <div class="carousel-item"><img class="grow-carousal-imagestag"  src="https://eadn-wc01-7925410.nxedge.io/wp-content/uploads/2023/08/Changes-to-COVID-19-IPAC-Guidance-from-CDHO-and-RCDSO.webp" alt=""></div>
+                 <div class="carousel-item"><img class="grow-carousal-imagestag" src="https://rwc-industries.com/wp-content/uploads/2021/10/Dental-PPE-1-700x623.jpg.webp" alt=""></div>
+                 
+              </div>
+            </div>
+
+
+       
+
+          </div>
+
+
+
+
+
+          <!-- section10footer/////////////////////////////////////////////////////////////////////////// -->
+          <!-- section10footer/////////////////////////////////////////////////////////////////////////// -->
+          <!-- section10footer/////////////////////////////////////////////////////////////////////////// -->
+          <!-- section10footer/////////////////////////////////////////////////////////////////////////// -->
+
+          <div id="number" class="grow-footer">
+            
+            
+            <iframe class="grow-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.83645216285!2d-90.00444322529705!3d35.135754659747505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d57e02faea552d%3A0x5df1eff0f09a5467!2sDr.%20J.%20Whitley%20Wills!5e0!3m2!1sen!2sin!4v1702456405820!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <div class="grow-address-footer">
+
+
+              <div class="grow-addressleftdiv">
+
+
+
+                <div class="grow-left-top1">
+                  <p class="grow-officename">J. WHITLEY WILLS. DDS</p>
+                  <p class="grow-officehours">OFFICE HOURS</p>
+                  <div class="grow-times-dental">
+                    <div class="grow-dateandtime">
+                      <p>MON</p>
+                      <p>7:20 am - 3:00 pm</p>
+                    </div>
+
+                    <div class="grow-dateandtime">
+                      <p>TUE</p>
+                      <p>8:00 am - 12:00 pm</p>
+                    </div>
+
+                    <div class="grow-dateandtime">
+                      <p>WED - THU</p>
+                      <p>8:00 am - 5:00 pm</p>
+                    </div>
+
+                    <div class="grow-dateandtime">
+                      <p>FRI - SUN</p>
+                      <p>CLOSED</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+
+                <div class="grow-left-top2">
+                  <p class="grow-officeloc">LOCATION</p>
+                  <span>59 S Idlewild St.,</span>
+                  <span>Memphis, TN</span>
+                  <span>Phone :(901) 26-9525</span>
+                  <span>Text Us :(901)726-9525</span>
+                  <span>Email : office@jwhitleywills.com</span>
+
+                </div>
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="grow-address-right-div">
+                <div class="grow-navigation">
+                  <p>NAVIGATION</p>
+                  <a class="grow-nav-colo" style="text-decoration: none;" href="#homepage">Home</a>
+                  <a class="grow-nav-colo" href="#reviewss">Review</a>
+                  <a class="grow-nav-colo" href="#appointment">Contact</a>
+
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+          <!-- endfoot/////////////////////////////////////////////////////////////////////////// -->
+          <!-- endfoot/////////////////////////////////////////////////////////////////////////// -->
+          <!-- endfoot/////////////////////////////////////////////////////////////////////////// -->
+          <!-- endfoot /////////////////////////////////////////////////////////////////////////// -->
+
+          <div class="grow-end-footer">
+            <div class="grow-socialmediafooter">
+              <img class="grow-end-foot-icons" src="Icons/ggl.png" alt="">
+              <img class="grow-end-foot-icons"  src="Icons/fb.png" alt="">
+              <img class="grow-end-foot-icons"  src="Icons/tw (1).png" alt="">
+              <img class="grow-end-foot-icons"  src="Icons/utube.png" alt="">
+
+            </div>
+            <p>ⓒ Copyright 2023 AjithGrowthPlug.Inc</p>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+            <p>Accessibility Statement</p>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+    <script src="Scroll.js"></script>
+    <script src="Navbar.js"></script>
+    <script src="Persons.js"></script>
+    <script src="GalleryCarousal.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+   
+  </body>
+</html>

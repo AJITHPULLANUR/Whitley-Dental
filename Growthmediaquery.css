@@ -1,0 +1,876 @@
+/* mediaquery?//////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 600px) {
+    *{
+        overflow-x: hidden;
+    }
+    .Grow-Main-container{
+        width:100%;
+    }
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar {
+        background-color: #3483eb;
+        overflow: hidden;
+        padding-left: 0;
+      
+      }
+      .Grow-request{
+        width: 220px;
+        background-color: transparent;
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+     
+        text-decoration: none;
+        transition: background-color 0.3s;
+    
+      }
+      
+
+      .grow-mainpage-cartoonimage{
+        width: 100%;
+        height: 400px;
+        background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://img.freepik.com/premium-vector/portland-skyline-with-gray-buildings-blue-sky-reflections-vector-illustration-business-travel-tourism-concept-with-modern-architecture-image-presentation-banner-placard-web-site_119523-4497.jpg?w=826);
+        background-size: 100% 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .grow-create-text{
+        font-size: 25px;
+        color: white;
+      }
+      .growth-company-logo{
+        width: 360px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .growth-company-logo-image{
+        width: 200px;
+        height:100%;
+        object-fit: cover;
+    }
+
+
+
+      /* section2///////////////////////////////////////////////////////////////////////// */
+
+  .grow-persons{
+    height: 850px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(234,255,255);
+    background: linear-gradient(0deg, rgba(234,255,255,1) 0%, rgba(20,132,222,1) 100%, rgba(212,196,163,1) 100%);
+    }
+    .grow-item-image{
+      width: 200px;
+      height: 120px;
+    }
+    .grow-map-div{
+      width: 260px;
+      height: 170px;
+      background-color: white;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      flex-direction: column;
+      color: #3483eb;
+    }
+
+
+    /* section2//////////////////////draragraph//////////////////////////////////////////////////////////////////// */
+  /* section2//////////////////////draragraph//////////////////////////////////////////////////////////////////// */
+
+
+  .grow-doctor-paragraph{
+    width: 100%;
+    height: 740px;
+    /* background-color: red; */
+    
+
+  }
+  .grow-head-tag{
+    width: 100%;
+    height: 120px;
+    /* background-color: yellow; */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    color: rgb(47, 176, 236);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+  }
+  .grow-dr-image{
+    width: 350px;
+    height: 300px;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grow-dr-image-pyramid{
+    width: 100%;
+    height: 200px;
+  }
+  .grow-dr-nameandpara{
+    width: 640px;
+    height: 480px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .grow-drpara-main{
+    width: 100%;
+    height: 580px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .grow-drop-paraheads{
+    width: 100%;
+    height: 80px;
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+  .grow-drop-head24{
+    font-size: 25px;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+   
+
+  }
+  .grow-drop-head16{
+    font-size: 19px;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 12px;
+
+  }
+  .grow-dr-paragraphpara{
+    width: 55%;
+    height: 220px;
+    /* background-color: brown; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: normal;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+  }
+  .grow-button-learnmore{
+    width: 80px;
+    height: 30px;
+    border: 1px solid rgb(20, 201, 247);
+    color: rgb(20, 201, 247);
+    background-color: white;
+  }
+
+
+
+  /* section3paraga/////////////////////////////////////////////////////////////////////////////////////////// */
+/* section3paraga/////////////////////////////////////////////////////////////////////////////////////////// */
+/* section3paraga/////////////////////////////////////////////////////////////////////////////////////////// */
+/* section3paraga/////////////////////////////////////////////////////////////////////////////////////////// */
+.grow-dr-secondpara{
+  width: 100%;
+  height: 750px;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+}
+.grow-second-parahead{
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+ color: #3483eb;
+}
+.grow-secondparagraph-maindiv{
+  width: 95%;
+  height: 690px;
+  /* background-color: tan; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.grow-secndparagraph{
+  width: 350px;
+  height: 380px;
+  /* background-color: turquoise; */
+  background-size: 500px 380px;
+  display: flex;
+  justify-content: center;
+text-align: justify;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/027/535/428/non_2x/abstract-transparent-water-shadow-surface-texture-natural-ripple-on-blue-background-photo.jpg);
+}
+  .grow-seconddrphoto{
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+.grow-secondpara-heading{
+  font-size: 24px;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.grow-secondpara-paragraph{
+  font-size: 16px;
+  color: grey;
+  width: 90%;
+  line-height: 18px;
+
+
+}
+.grow-dr-ddsphoto{
+  width: 250px;
+  height: 248px;
+}
+
+
+
+/* <!-- section5logos/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- section5logos/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- section5logos/////////////////////////////////////////////////////////////////////////////// --> */
+
+.grow-section5-logos{
+  width: 100%;
+  height: 120px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 0;
+}
+.grow-section5-eachlogo0{
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.grow-section5-eachlogo1{
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.grow-section5-eachlogo2{
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.grow-section5-eachlogo3{
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.grow-section5-eachlogo4{
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.grow-section5-eachlogo5{
+  width: 200px;
+  height: 120px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+/* <!-- section6dental/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- section6dental/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- section6dental/////////////////////////////////////////////////////////////////////////////// --> */
+.grow-dental-circeles{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1100px;
+  justify-content: space-evenly;
+  background: rgb(234,255,255);
+  background: linear-gradient(0deg, rgba(234,255,255,1) 9%, rgba(255,255,255,1) 30%, rgba(201,227,247,1) 60%, rgba(165,208,242,1) 88%, rgba(124,187,236,1) 100%, rgba(85,166,231,1) 100%, rgba(20,132,222,1) 100%);
+}
+.grow-dental-mapdiv{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: blue; */
+  width: 80%;
+  height: 980px;
+  flex-direction: column;
+}
+.grow-dental-radius-circles{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color:#3483eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grow-dental-images{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.grow-dentalimagetextdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 170px;
+  height: 210px;
+  /* background-color: red; */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #3483eb;
+  font-size: 14px;
+
+}
+.grow-dental-tag{
+  font-size: 24px;
+  color: #3483eb;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+/* <!-- section7review/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- section7review/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- section7review/////////////////////////////////////////////////////////////////////////////// --> */
+
+.grow-dental-review{
+  width: 100%;
+  height: 1400px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+}
+.grow-whitleyreview{
+  width: 300px;
+  height: 100px;
+  background-color: #258bcc;
+  border-radius: 8px;
+  display: flex;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  
+
+
+}
+.grow-review-drimage{
+  width: 100px;
+  height: 100px;
+
+  
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.grow-dental-reivew-images{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+.grow-review-nameanddetails{
+  width: 290px;
+  height: 60px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+.grow-rating{
+  width: 100px;
+  height: 100px;
+}
+.grow-combo-div{
+  width:140px;
+  height: 20px;
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: yellow;
+  margin-top: 10px;
+}
+.growth-base{
+  font-size: 12px;
+  color: white;
+}
+.grow-our-reviews{
+  font-size: 22px;
+  color: #3483eb;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+
+}
+.grow-reviews-fullrowdiv{
+  width: 84%;
+  height: 1000px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.grow-dental-reviews-1{
+  width: 290px;
+  height: 300px;
+  /* background-color: seagreen; */
+
+}
+.grow-dental-review-rows1{
+  width: 290px;
+  height: 190px;
+  background-color:  #258bcc;
+  border-radius: 12px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+
+}
+.grow-dental-review-rows2{
+  width: 290px;
+  height: 100px;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.grow-dental-review-imageandname{
+  width: 250px;
+  height: 70px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grow-dental-nameimagetag{
+  width: 80px;
+  height: 70px;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grow-dental-nameandrating{
+  width: 120px;
+  height: 40px;
+  /* background-color: blue; */
+  margin-left: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-direction: column;
+
+}
+.grow-name-circle{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(207, 53, 117);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.grow-coma{
+  width: 20px;
+  height: 20px;
+}
+.grow-coma-div{
+  width: 120px;
+  height: 50px;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.grow-star-andpara{
+  width: 260px;
+  height: 180px;
+  /* background-color: teal; */
+  margin-left: 20px;
+  text-align: justify;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+
+
+}
+.Grow-rewname{
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+.grow-revi-date{
+  font-size: 13px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+.grow-button-allreviews{
+  width: 180px;
+  height: 30px;
+  border: 0;
+  background-color: rgb(58, 43, 43);
+  font-weight: bold;
+  color: white;
+
+}
+
+
+
+
+
+
+/* <!-- section8insure/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- section8insure/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- section8insure/////////////////////////////////////////////////////////////////////////////// --> */
+
+.grow-dental-insure{
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.grow-dental-insureimage{
+  width: 350px;
+  height: 200px;
+  border-radius: 8px;
+
+
+
+}
+.grow-leftinsure{
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grow-care-image{
+  width: 200px;
+  height: 50px;
+  object-fit: contain;
+}
+.grow-insure-tag{
+  color: #258bcc;
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-align: center;
+
+
+}
+.grow-network-tag{
+  font-size: 15px;
+  letter-spacing: normal;
+  text-align: center;
+  color: gray;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5px;
+
+
+}
+.grow-apply-tag{
+  color: #258bcc;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+
+
+}
+    
+
+
+/* <!-- sction9gallery/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- sction9gallery/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- sction9gallery/////////////////////////////////////////////////////////////////////////////// --> */
+  
+
+.grow-gallery-div{
+  width: 100%;
+  height: 750px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 0;
+  text-align: center;
+
+}
+
+
+
+.grow-carousal-imagestag {
+  width:95%;
+  height: 200px;
+  
+  
+}
+#carousel-container{
+  display: none;
+}
+.carouselmedia{
+  display: inline;
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  height: 700px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  
+}
+
+/* <!-- secrion10footer/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- secrion10footer/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- secrion10footer/////////////////////////////////////////////////////////////////////////////// --> */
+.grow-footer{
+  width: 100%;
+  height: 800px;
+  background-color: #258bcc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.grow-address-footer{
+  width: 850px;
+  /* background-color: blue; */
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+}
+.grow-addressleftdiv{
+  width: 380px;
+  /* background-color: green; */
+  height: 370px;
+}
+.grow-address-right-div{
+  width: 280px;
+  /* background-color: yellow; */
+  height: 300px;
+  display: flex;
+ 
+  justify-content: center;
+}
+.grow-left-top1{
+  width: 380px;
+  height: 180px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: white;
+  
+}
+.grow-left-top2{
+  width: 380px;
+  height: 90px;
+  /* background-color: rgb(223, 15, 205); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  color: white;
+  line-height: 14px;
+}
+.grow-times-dental{
+  width: 300px;
+  height: 100px;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grow-officename{
+  margin-top: 25px;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+}
+.grow-officeloc{
+  color: white;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+}
+.grow-dateandtime{
+  width: 240px;
+  height: 40px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  color: white;
+
+}
+.grow-navigation{
+  width: 120px;
+  height: 200px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+
+
+}
+.grow-maps{
+  width:340px;
+  height:200px;
+}
+
+
+
+
+
+
+
+
+/* <!-- secrion10footer/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- secrion10footer/////////////////////////////////////////////////////////////////////////////// --> */
+/* <!-- secrion10footer/////////////////////////////////////////////////////////////////////////////// --> */
+
+.grow-end-footer{
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #258bcc;
+  text-align: center;
+}
+.grow-socialmediafooter{
+  width: 200px;
+  height: 40px;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.grow-end-foot-icons{
+  width: 16px;
+  height: 16px;
+}
+}
+
+
+
+
+
+
+
+    
+  
+    
+  
